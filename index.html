@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CvDossier — A tua trajetória merece uma boa apresentação</title>
+  <meta name="description" content="Cria e personaliza currículos e cartas no telemóvel com o CvDossier. Escolhe um modelo, organiza o teu percurso e exporta em PDF, Word ou PowerPoint editáveis. Para Android e iOS.">
+  <meta name="theme-color" content="#0A2A6B">
+  <link rel="canonical" href="https://cvdossier.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CvDossier — A tua trajetória merece uma boa apresentação">
+  <meta property="og:description" content="Currículos e cartas bonitos, feitos no telemóvel. Exporta em PDF, Word ou PowerPoint.">
+  <meta property="og:url" content="https://cvdossier.app/">
+  <meta property="og:image" content="https://cvdossier.app/assets/marca/logo-com-nome.png">
+  <link rel="icon" type="image/png" href="assets/marca/favicon.png">
+  <link rel="apple-touch-icon" href="assets/marca/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Saltar para o conteúdo</a>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <!-- Cabeçalho -->
+  <header class="site-header" id="inicio">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="CvDossier — início">
+        <img src="assets/marca/simbolo.png" alt="" width="30" height="34">
+        <span class="wordmark"><span class="wm-cv">Cv</span>Dossier</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#modelos">Modelos</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#formatos">Formatos</a>
+        <a href="#perguntas">Perguntas</a>
+        <a class="btn btn-sm btn-dark nav-cta magnetic" href="#descarregar">Descarregar</a>
+      </nav>
+      <button class="nav-toggle" aria-controls="nav" aria-expanded="false" aria-label="Abrir menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- Apresentação -->
+    <section class="hero">
+      <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 class="slogan" aria-label="«A tua trajetória merece uma boa apresentação.»">
+            <span class="w q" style="--i:0" aria-hidden="true">“</span><span class="w" style="--i:1" aria-hidden="true">A</span>
+            <span class="w" style="--i:2" aria-hidden="true">tua</span>
+            <span class="w grad" style="--i:3" aria-hidden="true">trajetória</span>
+            <span class="w" style="--i:4" aria-hidden="true">merece</span>
+            <span class="w" style="--i:5" aria-hidden="true">uma</span>
+            <span class="w" style="--i:6" aria-hidden="true">boa</span>
+            <span class="nw"><span class="w hl" style="--i:7" aria-hidden="true"><em>apresentação.</em><svg class="underline" viewBox="0 0 300 20" preserveAspectRatio="none"><path d="M3 14C60 6 140 3 297 9" pathLength="1" vector-effect="non-scaling-stroke"/></svg></span><span class="w q" style="--i:8" aria-hidden="true">”</span></span>
+          </h1>
+          <p class="lead reveal">Cria currículos e cartas bonitos no telemóvel. Escolhe um modelo, conta o teu percurso e exporta em PDF, Word ou PowerPoint — pronto para a próxima oportunidade.</p>
+          <div class="stores reveal" id="descarregar">
+            <a class="store magnetic" data-store="ios" href="#descarregar" aria-label="Descarregar na App Store">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.47.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.28-1.6 2.78-.41 6.9 1.15 9.15.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.38-3.68ZM14.1 5.86c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.61-2.67 1.37-.58.67-1.1 1.76-.96 2.8 1.02.08 2.06-.52 2.69-1.28Z"/></svg>
+              <span><small>Descarregar na</small>App Store</span>
+            </a>
+            <a class="store magnetic" data-store="android" href="#descarregar" aria-label="Disponível no Google Play">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#00D7FE" d="M3.6 2.3c-.2.2-.3.6-.3 1v17.4c0 .4.1.8.3 1l.1.1 9.7-9.7v-.2L3.7 2.2l-.1.1Z"/><path fill="#FFCE00" d="m16.6 15.4-3.2-3.2v-.2l3.2-3.3h.1l3.8 2.2c1.1.6 1.1 1.6 0 2.3l-3.8 2.2h-.1Z"/><path fill="#FF3A44" d="m16.7 15.3-3.3-3.3-9.8 9.8c.4.4 1 .4 1.7 0l11.4-6.5"/><path fill="#00F076" d="M16.7 8.7 5.3 2.2c-.7-.4-1.3-.3-1.7.1l9.8 9.7 3.3-3.3Z"/></svg>
+              <span><small>Disponível no</small>Google Play</span>
+            </a>
+          </div>
+          <p class="hero-note reveal">Grátis para começar · Android e iOS · <a href="#modelos">Explorar modelos →</a></p>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="orbit"><span></span></div>
+          <div class="layer" data-depth="14"><img class="paper paper-a" src="assets/modelos/luanda-hd.webp" alt="" width="794" height="1123"></div>
+          <div class="layer" data-depth="22"><img class="paper paper-b" src="assets/modelos/estreia-hd.webp" alt="" width="794" height="1123"></div>
+          <div class="layer" data-depth="30"><img class="paper paper-c" src="assets/modelos/lisboa-hd.webp" alt="" width="794" height="1123"></div>
+          <div class="layer" data-depth="8">
+            <div class="phone hero-phone">
+              <div class="phone-screen"><img src="assets/app/inicio-claro.webp" alt="" width="645" height="1398"></div>
+              <span class="island"></span>
+            </div>
+          </div>
+          <div class="layer" data-depth="44"><div class="chip chip-pdf"><i class="fi fi-pdf">PDF</i><span>Pronto a enviar<small>CV — Pequim Domingos.pdf</small></span></div></div>
+          <div class="layer" data-depth="36"><div class="chip chip-sync"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Alterações guardadas</div></div>
+          <div class="layer" data-depth="28"><div class="chip chip-palette"><span style="background:#0A2A6B"></span><span style="background:#2B8AF7"></span><span style="background:#1F7A4D"></span><span style="background:#C2562F"></span></div></div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#historia" aria-label="Continuar"><span></span></a>
+    </section>
+
+    <!-- História -->
+    <section class="story" id="historia" data-dark>
+      <div class="story-pin">
+        <div class="container story-inner">
+          <p class="kicker kicker-light">Cada percurso conta</p>
+          <p class="story-text" data-scrub>Por trás de cada currículo há uma <em>vida inteira.</em> Noites de estudo. O primeiro emprego. A coragem de recomeçar. Os sonhos que ainda estão a caminho. Tudo isso merece ser visto — e <em>bem apresentado.</em></p>
+          <p class="story-sign">É para isso que existe o <strong><span class="wm-cv">Cv</span>Dossier</strong>.</p>
+        </div>
+        <div class="moments marquee" aria-hidden="true">
+          <ul class="marquee-track">
+            <li>O primeiro emprego</li><li>O estágio de verão</li><li>A candidatura ao mestrado</li><li>A mudança de carreira</li><li>A bolsa de estudo</li><li>A promoção</li><li>O recomeço</li><li>O sonho de trabalhar fora</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modelos -->
+    <section class="section models" id="modelos">
+      <div class="container">
+        <div class="section-head center">
+          <p class="kicker reveal">Modelos</p>
+          <h2 class="reveal">Um ponto de partida. <em>A tua apresentação.</em></h2>
+          <p class="sub reveal">Escolhe um modelo e adapta-o ao teu percurso. Estilos simples, profissionais e modernos — de Luanda a Lisboa, de Benguela a Coimbra.</p>
+        </div>
+      </div>
+      <div class="wall">
+        <div class="wall-inner">
+          <div class="marquee" data-direction="left">
+            <ul class="marquee-track">
+              <li><figure><img src="assets/modelos/luanda.webp" alt="Modelo Luanda" loading="lazy" width="400" height="566"><figcaption>Luanda</figcaption></figure></li>
+              <li><figure><img src="assets/modelos/estreia.webp" alt="Modelo Estreia" loading="lazy" width="400" height="566"><figcaption>Estreia</figcaption></figure></li>
+              <li><figure><img src="assets/modelos/sintra.webp" alt="Modelo Sintra" loading="lazy" width="400" height="566"><figcaption>Sintra</figcaption></figure></li>
+              <li><figure><img src="assets/modelos/codigo.webp" alt="Modelo Código" loading="lazy" width="400" height="566"><figcaption>Código</figcaption></figure></li>
+              <li><figure><img src="assets/modelos/capital.webp" alt="Modelo Capital" loading="lazy" width="400" height="566"><figcaption>Capital</figcaption></figure></li>
+              <li><figure><img src="assets/modelos/campus.webp" alt="Modelo Campus" loading="lazy" width="400" height="566"><figcaption>Campus</figcaption></figure></li>
+            </ul>
+          </div>
+          <div class="marquee" data-direction="right">
+            <ul class="marquee-track">
+              <li><figure><img src="assets/modelos/lisboa.webp" alt="Modelo Lisboa" loading="lazy" width="400" height="566"><figcaption>Lisboa</figcaption></figure></li>
+              <li><figure><img src="assets/modelos/aurora.webp" alt="Modelo Aurora" loading="lazy" width="400" height="566"><figcaption>Aurora</figcaption></figure></li>
+              <li><figure><img src="assets/modelos/essencial.webp" alt="Modelo Essencial" loading="lazy" width="400" height="566"><figcaption>Essencial</figcaption></figure></li>
+              <li><figure><img src="assets/modelos/benguela.webp" alt="Modelo Benguela" loading="lazy" width="400" height="566"><figcaption>Benguela</figcaption></figure></li>
+              <li><figure><img src="assets/modelos/porto.webp" alt="Modelo Porto" loading="lazy" width="400" height="566"><figcaption>Porto</figcaption></figure></li>
+              <li><figure><img src="assets/modelos/mindelo.webp" alt="Modelo Mindelo" loading="lazy" width="400" height="566"><figcaption>Mindelo</figcaption></figure></li>
+            </ul>
+          </div>
+          <div class="marquee" data-direction="left">
+            <ul class="marquee-track">
+              <li><figure><img src="assets/modelos/faro.webp" alt="Modelo Faro" loading="lazy" width="400" height="566"><figcaption>Faro</figcaption></figure></li>
+              <li><figure><img src="assets/modelos/nova.webp" alt="Modelo Nova" loading="lazy" width="400" height="566"><figcaption>Nova</figcaption></figure></li>
+              <li><figure><img src="assets/modelos/pixel.webp" alt="Modelo Pixel" loading="lazy" width="400" height="566"><figcaption>Pixel</figcaption></figure></li>
+              <li><figure><img src="assets/modelos/atlantico.webp" alt="Modelo Atlântico" loading="lazy" width="400" height="566"><figcaption>Atlântico</figcaption></figure></li>
+              <li><figure><img src="assets/modelos/coimbra.webp" alt="Modelo Coimbra" loading="lazy" width="400" height="566"><figcaption>Coimbra</figcaption></figure></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="fine center">Exemplos com dados fictícios.</p>
+    </section>
+
+    <!-- Benefícios -->
+    <section class="section" id="beneficios">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker reveal">Porquê o CvDossier</p>
+          <h2 class="reveal">Dá forma à tua <em>experiência.</em></h2>
+          <p class="sub reveal">Quer estejas a preparar o primeiro currículo ou a atualizar o teu percurso, o CvDossier ajuda-te a organizar e apresentar o que tens para oferecer.</p>
+        </div>
+
+        <div class="bento">
+          <article class="card card-studio spot reveal">
+            <div class="card-text">
+              <span class="icon"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18c1 0 1.6-.8 1.6-1.6 0-.5-.2-.8-.4-1.1-.3-.3-.4-.6-.4-1 0-.9.7-1.6 1.6-1.6h1.9A4.8 4.8 0 0 0 21 11c0-4.4-4-8-9-8Z"/><circle cx="7.5" cy="11" r="1.2"/><circle cx="10.5" cy="7.5" r="1.2"/><circle cx="15" cy="7.8" r="1.2"/></svg></span>
+              <h3>Dá o teu toque</h3>
+              <p>Personaliza cores, fontes e elementos até encontrares uma apresentação que combine contigo. Experimenta aqui.</p>
+              <div class="studio-controls">
+                <div class="swatches" role="radiogroup" aria-label="Cor de destaque">
+                  <button role="radio" aria-checked="true" aria-label="Azul-marinho" style="--c:#0A2A6B" data-color="#0A2A6B"></button>
+                  <button role="radio" aria-checked="false" aria-label="Azul" style="--c:#2B8AF7" data-color="#2B8AF7"></button>
+                  <button role="radio" aria-checked="false" aria-label="Verde" style="--c:#1F7A4D" data-color="#1F7A4D"></button>
+                  <button role="radio" aria-checked="false" aria-label="Terracota" style="--c:#C2562F" data-color="#C2562F"></button>
+                  <button role="radio" aria-checked="false" aria-label="Violeta" style="--c:#6D4AFF" data-color="#6D4AFF"></button>
+                  <button role="radio" aria-checked="false" aria-label="Grafite" style="--c:#1F2430" data-color="#1F2430"></button>
+                </div>
+                <div class="seg" role="radiogroup" aria-label="Fonte do nome">
+                  <button role="radio" aria-checked="true" data-font="sans">Aa <small>Sans</small></button>
+                  <button role="radio" aria-checked="false" data-font="serif"><span class="serif">Aa</span> <small>Serif</small></button>
+                </div>
+              </div>
+            </div>
+            <div class="mini-cv-wrap" aria-hidden="true">
+              <div class="mini-cv" id="miniCv">
+                <aside class="mc-side">
+                  <span class="mc-avatar">PD</span>
+                  <span class="mc-h">Contacto</span>
+                  <i style="width:80%"></i><i style="width:64%"></i><i style="width:72%"></i>
+                  <span class="mc-h">Competências</span>
+                  <b style="--w:88%"></b><b style="--w:70%"></b><b style="--w:78%"></b><b style="--w:56%"></b>
+                  <span class="mc-h">Idiomas</span>
+                  <i style="width:60%"></i><i style="width:48%"></i>
+                </aside>
+                <div class="mc-main">
+                  <strong class="mc-name">Pequim Muanguvo Domingos</strong>
+                  <span class="mc-role">Especialista em Marketing Digital</span>
+                  <span class="mc-t">Perfil</span>
+                  <i></i><i></i><i style="width:76%"></i>
+                  <span class="mc-t">Experiência</span>
+                  <em class="mc-row"><u></u><s></s></em>
+                  <i></i><i style="width:88%"></i><i style="width:64%"></i>
+                  <em class="mc-row"><u></u><s></s></em>
+                  <i></i><i style="width:82%"></i>
+                  <span class="mc-t">Formação</span>
+                  <em class="mc-row"><u></u><s></s></em>
+                  <i style="width:70%"></i>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card spot reveal">
+            <span class="icon"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h13"/></svg></span>
+            <h3>Organiza o teu percurso</h3>
+            <p>Reúne formação, experiência e competências num currículo com uma leitura clara.</p>
+          </article>
+
+          <article class="card spot reveal">
+            <span class="icon"><svg viewBox="0 0 24 24"><path d="M2.5 12s3.5-6.5 9.5-6.5S21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="3"/></svg></span>
+            <h3>Revê antes de partilhar</h3>
+            <p>Confere as páginas do currículo e ajusta os detalhes antes de exportar.</p>
+          </article>
+
+          <article class="card card-wide spot fold reveal">
+            <div>
+              <span class="icon"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/><path d="M10 13h6M10 17h4"/></svg></span>
+              <h3>Mais do que um currículo</h3>
+              <p>Cartas de apresentação, de motivação e de recomendação, com desenhos que combinam com o teu currículo. Troca de modelo e o texto acompanha-te.</p>
+            </div>
+            <ul class="doc-pills">
+              <li>Currículos</li>
+              <li>Cartas de apresentação</li>
+              <li>Cartas de motivação</li>
+              <li>Cartas de recomendação</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como funciona -->
+    <section class="section how" id="como-funciona">
+      <div class="container how-grid">
+        <div class="how-visual" aria-hidden="true">
+          <div class="phone how-phone">
+            <div class="phone-screen">
+              <div class="screen is-on" data-screen="0"><img src="assets/app/inicio-claro.webp" alt="" loading="lazy" width="645" height="1398"></div>
+              <div class="screen" data-screen="1"><img src="assets/app/documentos-claro.webp" alt="" loading="lazy" width="645" height="1398"></div>
+              <div class="screen screen-editor" data-screen="2">
+                <div class="ed-bar"><span>‹</span><b>Editar</b><span>•••</span></div>
+                <div class="ed-page"><img src="assets/modelos/aurora-hd.webp" alt="" loading="lazy" width="794" height="1123"><span class="ed-sel"></span></div>
+                <div class="ed-tools"><i></i><i></i><i></i><i></i><i></i></div>
+              </div>
+              <div class="screen screen-editor" data-screen="3">
+                <div class="ed-bar"><span>‹</span><b>Editar</b><span>•••</span></div>
+                <div class="ed-page"><img src="assets/modelos/aurora-hd.webp" alt="" loading="lazy" width="794" height="1123"></div>
+                <div class="sheet">
+                  <b>Exportar</b>
+                  <div class="sheet-row"><i class="fi fi-pdf">PDF</i>PDF<span class="radio on"></span></div>
+                  <div class="sheet-row"><i class="fi fi-doc">DOC</i>Word editável<small class="pro">Premium</small><span class="radio"></span></div>
+                  <div class="sheet-row"><i class="fi fi-ppt">PPT</i>PowerPoint editável<small class="pro">Premium</small><span class="radio"></span></div>
+                  <span class="sheet-btn">Exportar</span>
+                </div>
+              </div>
+            </div>
+            <span class="island"></span>
+          </div>
+        </div>
+        <div>
+          <div class="section-head">
+            <p class="kicker reveal">Como funciona</p>
+            <h2 class="reveal">Do teu percurso ao currículo, <em>passo a passo.</em></h2>
+          </div>
+          <ol class="steps" id="steps">
+            <li class="step">
+              <span class="step-n">1</span>
+              <div><h3>Escolhe um modelo</h3><p>Encontra um desenho que se adapte à apresentação que procuras.</p></div>
+            </li>
+            <li class="step">
+              <span class="step-n">2</span>
+              <div><h3>Conta o teu percurso</h3><p>Acrescenta a tua formação, experiência e competências. Se estás a começar, dá espaço ao que já aprendeste e sabes fazer.</p></div>
+            </li>
+            <li class="step">
+              <span class="step-n">3</span>
+              <div><h3>Personaliza e confere</h3><p>Arrasta, redimensiona e ajusta cada elemento. Revê todas as páginas antes de partilhar.</p></div>
+            </li>
+            <li class="step">
+              <span class="step-n">4</span>
+              <div><h3>Exporta no formato certo</h3><p>Guarda em PDF ou, com o Premium, em Word e PowerPoint editáveis, conforme o que precisas.</p></div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formatos -->
+    <section class="section" id="formatos">
+      <div class="container">
+        <div class="section-head center">
+          <p class="kicker reveal">Exportação</p>
+          <h2 class="reveal">O teu currículo em <em>três formatos.</em></h2>
+          <p class="sub reveal">Escolhe o formato para partilhar o currículo ou continuar a editá-lo. O PDF está em todos os planos; Word e PowerPoint chegam com o Premium.</p>
+        </div>
+        <div class="formats">
+          <article class="format spot reveal">
+            <span class="file file-pdf"><span>PDF</span></span>
+            <h3>PDF</h3>
+            <p>Para partilhar o currículo exatamente com a apresentação preparada na app.</p>
+          </article>
+          <article class="format spot reveal">
+            <span class="file file-doc"><span>DOCX</span></span>
+            <h3>Word editável <span class="tag-premium">Premium</span></h3>
+            <p>Para continuar a trabalhar o texto no Word. A organização das páginas pode mudar.</p>
+          </article>
+          <article class="format spot reveal">
+            <span class="file file-ppt"><span>PPTX</span></span>
+            <h3>PowerPoint editável <span class="tag-premium">Premium</span></h3>
+            <p>Para ajustar texto e elementos no PowerPoint, com uma página do currículo por slide.</p>
+          </article>
+        </div>
+        <p class="fine center reveal">Ao abrir no Word ou no PowerPoint, confere o resultado antes de partilhar: fontes e espaçamentos podem variar.</p>
+      </div>
+    </section>
+
+    <!-- Claro / escuro -->
+    <section class="section dark-band" id="aparencia" data-dark>
+      <div class="container theme-grid">
+        <div>
+          <p class="kicker reveal">Aparência</p>
+          <h2 class="reveal">De dia ou de noite, <em>à tua maneira.</em></h2>
+          <p class="sub reveal">Escolhe Claro, Escuro ou Sistema. O tema muda só a app: os teus modelos e os ficheiros exportados mantêm as suas cores.</p>
+          <ul class="ticks reveal">
+            <li>O trabalho fica guardado no telemóvel e sincronizado com a tua conta.</li>
+            <li>A app em português, inglês ou francês.</li>
+            <li>Fontes clássicas do Word, prontas a usar.</li>
+          </ul>
+          <p class="hint reveal">Desce a página e vê o tema mudar — ou arrasta a linha no telemóvel.</p>
+        </div>
+        <div class="compare-wrap reveal">
+          <div class="phone compare" id="compare" style="--pos:50%">
+            <div class="phone-screen">
+              <img src="assets/app/inicio-escuro.webp" alt="Ecrã inicial do CvDossier no tema escuro" loading="lazy" width="645" height="1398">
+              <img class="compare-top" src="assets/app/inicio-claro.webp" alt="Ecrã inicial do CvDossier no tema claro" loading="lazy" width="645" height="1398">
+              <span class="compare-handle" aria-hidden="true"><span></span></span>
+            </div>
+            <span class="island"></span>
+            <input type="range" min="0" max="100" value="50" aria-label="Comparar tema claro e escuro">
+          </div>
+          <div class="compare-labels" aria-hidden="true"><span>Claro</span><span>Escuro</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Planos -->
+    <section class="section" id="planos">
+      <div class="container">
+        <div class="section-head center">
+          <p class="kicker reveal">Planos</p>
+          <h2 class="reveal">Começa grátis. <em>Fica à vontade.</em></h2>
+        </div>
+        <div class="plans">
+          <article class="plan spot reveal">
+            <h3>Gratuito</h3>
+            <p class="plan-tag">Para começar sem pagar</p>
+            <ul class="ticks">
+              <li>Uma seleção de modelos de currículos e cartas</li>
+              <li>Editor completo e personalização</li>
+              <li>Exportação em PDF</li>
+              <li>Inclui anúncios</li>
+            </ul>
+          </article>
+          <article class="plan plan-premium fold reveal">
+            <span class="badge">Opcional</span>
+            <h3>Premium</h3>
+            <p class="plan-tag">Tudo desbloqueado, sem anúncios</p>
+            <ul class="ticks">
+              <li>Todos os modelos de currículos e cartas</li>
+              <li>Exportação em PDF, Word e PowerPoint editáveis</li>
+              <li>Sem anúncios enquanto a assinatura estiver ativa</li>
+              <li>Subscreves e cancelas no Google Play ou na App Store</li>
+            </ul>
+          </article>
+        </div>
+        <p class="fine center reveal">O preço e as condições aparecem na loja antes de confirmares a compra.</p>
+      </div>
+    </section>
+
+    <!-- Perguntas -->
+    <section class="section faq" id="perguntas">
+      <div class="container faq-grid">
+        <div class="section-head">
+          <p class="kicker reveal">Perguntas frequentes</p>
+          <h2 class="reveal">Antes de <em>começar.</em></h2>
+          <p class="sub reveal">Ainda tens dúvidas? Escreve para <a href="mailto:geralcvdossier@gmail.com">geralcvdossier@gmail.com</a>.</p>
+        </div>
+        <div class="faq-list reveal">
+          <details>
+            <summary>Onde descarrego o CvDossier?</summary>
+            <p>Escolhe o botão Google Play para Android ou App Store para iOS, no início ou no fim desta página.</p>
+          </details>
+          <details>
+            <summary>Preciso de experiência profissional para criar um currículo?</summary>
+            <p>Não. Podes dar destaque à formação, às competências e aos projetos que já realizaste. O currículo também serve para apresentar o teu primeiro passo profissional.</p>
+          </details>
+          <details>
+            <summary>Posso personalizar o currículo?</summary>
+            <p>Sim. Parte de um modelo e ajusta texto, cores, fontes e disposição dos elementos.</p>
+          </details>
+          <details>
+            <summary>Em que formatos posso exportar?</summary>
+            <p>Em PDF, em todos os planos. Com o Premium, também em Word editável (.docx) e PowerPoint editável (.pptx), para continuares a trabalhar o currículo. Confere o resultado ao abrir no Word ou no PowerPoint.</p>
+          </details>
+          <details>
+            <summary>O CvDossier é gratuito?</summary>
+            <p>Sim, podes começar grátis. A versão gratuita é financiada por anúncios, inclui uma seleção de modelos de currículos e cartas e exporta em PDF. O Premium, uma assinatura opcional gerida pelo Google Play ou pela App Store, desbloqueia todos os modelos, a exportação em Word e PowerPoint e remove os anúncios.</p>
+          </details>
+          <details>
+            <summary>Preciso de uma conta?</summary>
+            <p>Sim. Cria a tua conta na app para começar. A conta associa os teus documentos e fotografias ao teu perfil.</p>
+          </details>
+          <details>
+            <summary>Como posso gerir ou eliminar a minha conta?</summary>
+            <p>Podes pedir a eliminação nas definições da app e tens 30 dias para cancelar o pedido. Consulta <a href="eliminacao-de-conta.html">Gestão e eliminação de conta</a> para conhecer todos os passos.</p>
+          </details>
+          <details>
+            <summary>Onde consulto as condições e a privacidade?</summary>
+            <p>Nos <a href="termos.html">Termos de utilização</a> e na <a href="privacidade.html">Política de privacidade</a>. Aí encontras as condições de uso, as responsabilidades e as informações sobre os teus dados.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chamada final -->
+    <section class="cta-final">
+      <div class="container">
+        <div class="cta-box fold reveal">
+          <div class="aurora aurora-dark" aria-hidden="true"><i></i><i></i><i></i></div>
+          <img class="cta-watermark" src="assets/marca/simbolo.png" alt="" aria-hidden="true">
+          <img class="cta-mark" src="assets/marca/simbolo.png" alt="" aria-hidden="true">
+          <h2>Começa pela forma como <em>te apresentas.</em></h2>
+          <p>Descarrega o CvDossier e cria um currículo que apresente o teu percurso com clareza.</p>
+          <div class="stores stores-light">
+            <a class="store magnetic" data-store="ios" href="#descarregar" aria-label="Descarregar na App Store">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.47.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.28-1.6 2.78-.41 6.9 1.15 9.15.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.38-3.68ZM14.1 5.86c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.61-2.67 1.37-.58.67-1.1 1.76-.96 2.8 1.02.08 2.06-.52 2.69-1.28Z"/></svg>
+              <span><small>Descarregar na</small>App Store</span>
+            </a>
+            <a class="store magnetic" data-store="android" href="#descarregar" aria-label="Disponível no Google Play">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#00D7FE" d="M3.6 2.3c-.2.2-.3.6-.3 1v17.4c0 .4.1.8.3 1l.1.1 9.7-9.7v-.2L3.7 2.2l-.1.1Z"/><path fill="#FFCE00" d="m16.6 15.4-3.2-3.2v-.2l3.2-3.3h.1l3.8 2.2c1.1.6 1.1 1.6 0 2.3l-3.8 2.2h-.1Z"/><path fill="#FF3A44" d="m16.7 15.3-3.3-3.3-9.8 9.8c.4.4 1 .4 1.7 0l11.4-6.5"/><path fill="#00F076" d="M16.7 8.7 5.3 2.2c-.7-.4-1.3-.3-1.7.1l9.8 9.7 3.3-3.3Z"/></svg>
+              <span><small>Disponível no</small>Google Play</span>
+            </a>
+          </div>
+          <a class="link-light" href="#modelos">Explorar modelos →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-slogan reveal"><span class="q">“</span>A tua trajetória merece uma boa <em>apresentação.</em><span class="q">”</span></p>
+    </div>
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#inicio">
+          <img src="assets/marca/simbolo.png" alt="" width="30" height="34">
+          <span class="wordmark"><span class="wm-cv">Cv</span>Dossier</span>
+        </a>
+        <p class="footer-desc">Cria, personaliza e exporta o teu currículo. Para Android e iOS.</p>
+      </div>
+      <nav aria-label="Produto">
+        <h4>Produto</h4>
+        <a href="#modelos">Modelos</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#formatos">Formatos</a>
+        <a href="#planos">Planos</a>
+      </nav>
+      <nav aria-label="Legal">
+        <h4>Legal</h4>
+        <a href="termos.html">Termos de utilização</a>
+        <a href="privacidade.html">Política de privacidade</a>
+        <a href="eliminacao-de-conta.html">Gestão e eliminação de conta</a>
+      </nav>
+      <div>
+        <h4>Apoio</h4>
+        <a href="mailto:geralcvdossier@gmail.com">geralcvdossier@gmail.com</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Cv Dossier. Todos os direitos reservados.</span>
+      <span>Google Play é uma marca da Google LLC. App Store é uma marca da Apple Inc.</span>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

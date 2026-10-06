@@ -102,7 +102,6 @@ let currentScreen = 0;
 
 // Tudo o que depende da posição da página
 const header = document.querySelector('.site-header');
-const bar = document.querySelector('.progress');
 const darkSections = [...document.querySelectorAll('[data-dark]')];
 let ticking = false;
 const onScroll = () => {
@@ -115,11 +114,6 @@ const onScroll = () => {
     const r = s.getBoundingClientRect();
     return r.top <= hb && r.bottom >= hb;
   }));
-  if (bar) {
-    const max = document.documentElement.scrollHeight - vh;
-    bar.style.setProperty('--sp', max > 0 ? (y / max).toFixed(4) : 0);
-  }
-
   if (story && storyWords.length && !reduceMotion) {
     const r = story.getBoundingClientRect();
     const p = clamp(-r.top / Math.max(r.height - vh, 1) * 1.15);

@@ -53,10 +53,6 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spa
 .skip { position: absolute; left: -999px; top: 8px; background: var(--ink); color: #fff; padding: 8px 14px; border-radius: 8px; z-index: 100; }
 .skip:focus { left: 8px; }
 
-/* Barra de progresso */
-.progress { position: fixed; inset: 0 0 auto 0; height: 3px; z-index: 60; pointer-events: none; }
-.progress span { display: block; height: 100%; transform-origin: 0 50%; transform: scaleX(var(--sp, 0)); background: linear-gradient(90deg, var(--blue), var(--navy)); }
-
 /* ---------- Botões ---------- */
 .btn {
   display: inline-flex; align-items: center; gap: 8px;

@@ -2,7 +2,7 @@
 
 // Endereços oficiais das lojas. Preencher antes de publicar.
 const LOJAS = {
-  android: '', // ex.: https://play.google.com/store/apps/details?id=...
+  android: '', // Em testes: os botões levam ao formulário. Preencher e atualizar os avisos após o lançamento público.
   ios: '',     // ex.: https://apps.apple.com/app/id...
 };
 

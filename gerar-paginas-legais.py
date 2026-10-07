@@ -12,7 +12,7 @@ from pathlib import Path
 
 AQUI = Path(__file__).resolve().parent
 DOCS = AQUI.parent / 'departamentos' / 'juridico-e-privacidade' / 'documentos'
-EMAIL = 'apoio@example.com'
+EMAIL = 'geralcvdossier@gmail.com'
 
 TABS = [
     ('termos.html', 'Termos de utilização'),
@@ -22,9 +22,9 @@ TABS = [
 
 
 def linkify(text):
-    # Os contactos de demonstração permanecem fictícios ao regenerar.
+    # Mantém os contactos de suporte e de envio da CvDossier ao regenerar.
     text = re.sub(r'[\w.+-]+@[\w-]+\.[\w.]+\w',
-                  lambda m: 'noreply@example.com' if m[0].startswith('noreply@') else EMAIL, text)
+                  lambda m: 'noreply@cvdossier.app' if m[0].startswith('noreply@') else EMAIL, text)
     text = html.escape(text, quote=False)
     text = re.sub(r'(https?://[^\s<]+?)([.,;:)]?)(?=\s|$)',
                   r'<a href="\1" target="_blank" rel="noopener">\1</a>\2', text)
@@ -87,7 +87,7 @@ def page(file, title_html, plain_title, description, meta, body):
       <div class="container">
         <h1>{title_html}</h1>
         <p class="legal-meta">{meta}</p>
-        <p class="legal-meta">Contacto fictício de demonstração: apoio@example.com.</p>
+        <p class="legal-meta">Contacto de suporte: geralcvdossier@gmail.com.</p>
         <nav class="legal-tabs" aria-label="Documentos legais">
 {tabs}
         </nav>

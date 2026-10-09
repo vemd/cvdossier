@@ -98,7 +98,7 @@ def page(file, title_html, plain_title, description, meta, body):
 
   <footer class="site-footer">
     <div class="container footer-bottom" style="margin-top:0;border-top:0;padding-top:0">
-      <span>© <span data-year>2026</span> Cv Dossier. Todos os direitos reservados.</span>
+      <span>© <span data-year>2026</span> CvDossier. Todos os direitos reservados.</span>
       <span><a href="mailto:{EMAIL}">{EMAIL}</a></span>
     </div>
   </footer>

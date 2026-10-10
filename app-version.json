@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "android": {
-    "version": "10.1.8",
-    "versionCode": 20,
+    "version": "10.1.9",
+    "versionCode": 22,
     "available": true
   }
 }

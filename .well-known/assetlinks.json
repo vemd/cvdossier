@@ -8,7 +8,9 @@
       "package_name": "com.cvdossier.app",
       "sha256_cert_fingerprints": [
         "C4:2E:8D:CD:DA:02:50:18:09:4E:34:5E:2A:5A:BA:DA:EA:E8:ED:45:11:4F:FF:49:5A:99:CE:6A:C0:D0:D3:16",
-        "C1:9F:81:BD:08:C0:3C:2B:EA:38:CA:AE:1B:37:2C:0F:F3:6D:66:9A:5C:A0:C9:85:2A:2C:B8:39:D9:87:E6:EE"
+        "C1:9F:81:BD:08:C0:3C:2B:EA:38:CA:AE:1B:37:2C:0F:F3:6D:66:9A:5C:A0:C9:85:2A:2C:B8:39:D9:87:E6:EE",
+        "88:4E:A3:50:1A:B5:65:BA:9B:D5:04:1E:28:E3:66:72:C6:FD:B1:6E:C3:A0:2F:E0:C1:38:F3:B2:C9:C1:71:F9",
+        "14:89:9C:D3:4A:C2:BE:20:1F:26:7E:F2:6D:95:B7:24:FA:29:E9:7D:5D:44:38:1A:F7:C7:AC:3B:B1:28:28:5A"
       ]
     }
   }

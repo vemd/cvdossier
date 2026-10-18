@@ -31,6 +31,7 @@
         <span class="wordmark"><span class="wm-cv">Cv</span>Dossier</span>
       </a>
       <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#apresentacao">Apresentação</a>
         <a href="#modelos">Modelos</a>
         <a href="#como-funciona">Como funciona</a>
         <a href="#formatos">Formatos</a>
@@ -46,10 +47,21 @@
   <main id="conteudo">
 
     <!-- Apresentação -->
-    <section class="hero">
-      <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
-      <div class="hero-grain" aria-hidden="true"></div>
+    <section class="hero hero-with-video">
       <div class="container hero-grid">
+        <figure class="hero-film" id="apresentacao" aria-labelledby="film-title">
+          <div class="film-player" data-video-player>
+            <a class="film-poster" href="https://www.youtube.com/watch?v=bLtvvkJKxPA" aria-label="Ver apresentação do CvDossier" data-video-play>
+              <img src="assets/apresentacao-cvdossier.webp" alt="" width="1280" height="720" fetchpriority="high">
+              <span class="film-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7V5Z" fill="currentColor"/></svg></span>
+              <span class="film-play-label">Ver apresentação <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </a>
+          </div>
+          <figcaption class="film-caption">
+            <div><p class="film-title" id="film-title">Uma ideia. <em>O teu próximo passo.</em></p><p>Descobre o projeto e o que estamos a preparar para ti.</p></div>
+            <a class="film-external" href="https://www.youtube.com/watch?v=bLtvvkJKxPA" target="_blank" rel="noopener noreferrer" aria-label="Ver apresentação no YouTube (abre num novo separador)">YouTube <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </figcaption>
+        </figure>
         <div class="hero-copy">
           <h1 class="slogan" aria-label="«A tua trajetória merece uma boa apresentação.»">
             <span class="w q" style="--i:0" aria-hidden="true">“</span><span class="w" style="--i:1" aria-hidden="true">A</span>
@@ -71,23 +83,8 @@
           <p class="hero-note reveal"><span class="test-badge">Pré-lançamento</span> Inscrição gratuita · <a href="#modelos">Explorar modelos →</a></p>
         </div>
 
-        <div class="hero-visual" aria-hidden="true">
-          <div class="orbit"><span></span></div>
-          <div class="layer" data-depth="14"><img class="paper paper-a" src="assets/modelos/luanda-hd.webp" alt="" width="794" height="1123"></div>
-          <div class="layer" data-depth="22"><img class="paper paper-b" src="assets/modelos/estreia-hd.webp" alt="" width="794" height="1123"></div>
-          <div class="layer" data-depth="30"><img class="paper paper-c" src="assets/modelos/lisboa-hd.webp" alt="" width="794" height="1123"></div>
-          <div class="layer" data-depth="8">
-            <div class="phone hero-phone">
-              <div class="phone-screen"><img src="assets/app/inicio-claro.webp" alt="" width="645" height="1398"></div>
-              <span class="island"></span>
-            </div>
-          </div>
-          <div class="layer" data-depth="44"><div class="chip chip-pdf"><i class="fi fi-pdf">PDF</i><span>Pronto a enviar<small>CV — Ana Costa.pdf</small></span></div></div>
-          <div class="layer" data-depth="36"><div class="chip chip-sync"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Alterações guardadas</div></div>
-          <div class="layer" data-depth="28"><div class="chip chip-palette"><span style="background:#0A2A6B"></span><span style="background:#2B8AF7"></span><span style="background:#1F7A4D"></span><span style="background:#C2562F"></span></div></div>
-        </div>
       </div>
-      <a class="scroll-cue" href="#historia" aria-label="Continuar"><span></span></a>
+      <a class="scroll-cue" href="#inscricao" aria-label="Continuar para a inscrição"><span></span></a>
     </section>
 
     <!-- Inscrições de pré-lançamento: Google Forms ligado ao Google Sheets -->
@@ -175,7 +172,7 @@
           </div>
         </div>
       </div>
-      
+
     </section>
 
     <!-- Benefícios -->

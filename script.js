@@ -130,22 +130,22 @@ window.addEventListener('scroll', requestScroll, { passive: true });
 window.addEventListener('resize', requestScroll);
 onScroll();
 
-// Profundidade na apresentação, a seguir o cursor
-const visual = document.querySelector('.hero-visual');
-if (visual && !reduceMotion && finePointer) {
-  const layers = [...visual.querySelectorAll('.layer')];
-  let frame = null;
-  window.addEventListener('pointermove', (e) => {
-    if (frame) return;
-    frame = requestAnimationFrame(() => {
-      const x = e.clientX / window.innerWidth - 0.5;
-      const y = e.clientY / window.innerHeight - 0.5;
-      layers.forEach((l) => {
-        const d = Number(l.dataset.depth);
-        l.style.transform = `translate3d(${-x * d}px, ${-y * d}px, 0)`;
-      });
-      frame = null;
-    });
+// Carregar o leitor apenas quando o visitante escolhe ver a apresentação.
+// O link continua a abrir o vídeo no YouTube quando JavaScript não está disponível.
+const videoPlay = document.querySelector('[data-video-play]');
+if (videoPlay) {
+  videoPlay.addEventListener('click', (event) => {
+    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    const player = videoPlay.closest('[data-video-player]');
+    const iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube-nocookie.com/embed/bLtvvkJKxPA?autoplay=1&playsinline=1&rel=0';
+    iframe.title = 'Apresentação do projeto CvDossier';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen';
+    iframe.allowFullscreen = true;
+    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+    player.replaceChildren(iframe);
+    iframe.focus();
   });
 }
 

@@ -1,25 +1,9 @@
-/* CvDossier — landing page */
-
-// Endereços oficiais das lojas. Preencher antes de publicar.
-const LOJAS = {
-  android: '', // Em testes: os botões levam ao formulário. Preencher e atualizar os avisos após o lançamento público.
-  ios: '',     // ex.: https://apps.apple.com/app/id...
-};
+/* CvDossier — landing page (pré-lançamento: a chamada principal leva à inscrição em #inscricao) */
 
 document.documentElement.classList.add('js');
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const finePointer = window.matchMedia('(pointer: fine)').matches;
 const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
-
-// Botões das lojas
-document.querySelectorAll('[data-store]').forEach((a) => {
-  const url = LOJAS[a.dataset.store];
-  if (url) {
-    a.href = url;
-    a.target = '_blank';
-    a.rel = 'noopener';
-  }
-});
 
 // Menu móvel
 const toggle = document.querySelector('.nav-toggle');

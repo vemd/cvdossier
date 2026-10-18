@@ -16,7 +16,7 @@
 <main>
   <header>CvDossier</header>
   <h1>Documento partilhado contigo</h1>
-  <p id="message">Abre esta ligação na app CvDossier para consultar o documento ou aceitar o convite.</p>
+  <p id="message">Abre esta ligação na app CvDossier e entra na tua conta para consultar ou editar o documento.</p>
   <a id="open" class="button hidden" rel="noreferrer">Abrir na app CvDossier</a>
   <p class="note">A pré-visualização e a edição neste navegador ainda não estão disponíveis. Se recebeste um convite por e-mail, entra na app com esse mesmo endereço confirmado.</p>
   <p class="note">Ainda não tens a app? Instala-a e depois volta a abrir a ligação original que recebeste.</p>
@@ -34,7 +34,7 @@
     const kind = invite.length === 1 && link.length === 0 ? 'invite' : link.length === 1 && invite.length === 0 ? 'link' : null;
     const token = kind ? params.get(kind) : null;
     const open = document.getElementById('open');
-    if (!kind || !token || !/^[a-f0-9]{64}$/.test(token)) {
+    if (!kind || !token || !(kind === 'invite' ? /^[a-f0-9]{64}$/ : /^(?:[a-f0-9]{64}|[A-Za-z0-9_-]{22})$/).test(token)) {
       document.getElementById('message').textContent = 'Esta ligação não é válida. Volta a abrir a ligação original ou pede uma nova ao proprietário.';
       return;
     }

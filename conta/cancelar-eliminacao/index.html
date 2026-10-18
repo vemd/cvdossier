@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src https://aqtsrewqwrfahwrvkpry.supabase.co; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>Cancelar eliminação da conta — CvDossier</title>
+  <link rel="icon" href="/assets/marca/favicon.png">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="card">
+    <header><img src="/assets/marca/simbolo.png" width="48" height="54" alt=""><span>CvDossier</span></header>
+    <section aria-labelledby="heading">
+      <h1 id="heading">Cancelar eliminação da conta</h1>
+      <p id="message" role="status" aria-live="polite">Estamos a verificar o teu pedido…</p>
+      <div id="details" hidden>
+        <p>A eliminação está prevista a partir de <strong id="deadline"></strong>, no teu fuso horário.</p>
+        <p>Se quiseres continuar connosco, confirma abaixo. A tua conta e os documentos serão mantidos.</p>
+        <button id="confirm" type="button" disabled>Sim, cancelar a eliminação</button>
+        <p class="muted">Se preferires manter o pedido, basta fechar esta página. Abrir esta ligação não cancela a eliminação.</p>
+      </div>
+      <button id="retry" type="button" hidden>Voltar a tentar</button>
+      <noscript><p>Ativa o JavaScript para confirmar nesta página, ou abre a app e vai a Conta → Eliminar conta → Cancelar eliminação.</p></noscript>
+    </section>
+    <footer>Precisas de ajuda? <a href="mailto:geralcvdossier@gmail.com">Contacta a equipa</a><br><a href="/">cvdossier.app</a> · <a href="/privacidade.html">Privacidade</a></footer>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>

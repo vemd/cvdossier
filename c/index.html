@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src 'self'; base-uri 'none'; form-action 'none'; connect-src 'none'">
+  <title>Documento partilhado · CvDossier</title>
+  <style>
+    :root{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#0f172a;background:#eef3fb;color-scheme:light}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px}main{max-width:520px;background:white;padding:32px;border-radius:24px;box-shadow:0 8px 32px #04327d12}header{font-size:24px;font-weight:800;color:#04327d;margin-bottom:24px}h1{font-size:26px;line-height:1.25}p{color:#475569;line-height:1.6}a{color:#04327d}.button{display:block;margin:24px 0;padding:16px;text-align:center;border-radius:12px;background:#04327d;color:white;text-decoration:none;font-weight:700}.stores{display:flex;flex-wrap:wrap;gap:16px;font-size:14px}.note{font-size:13px}.hidden{display:none}footer{border-top:1px solid #e2e8f0;margin-top:28px;padding-top:18px;font-size:13px}
+  </style>
+</head>
+<body>
+<main>
+  <header>CvDossier</header>
+  <h1>Documento partilhado contigo</h1>
+  <p id="message">Abre esta ligação na app CvDossier e entra na tua conta para consultar ou editar o documento.</p>
+  <a id="open" class="button hidden" rel="noreferrer">Abrir na app CvDossier</a>
+  <p class="note">A pré-visualização e a edição neste navegador ainda não estão disponíveis. Se recebeste um convite por e-mail, entra na app com esse mesmo endereço confirmado.</p>
+  <p class="note">Ainda não tens a app? Instala-a e depois volta a abrir a ligação original que recebeste.</p>
+  <div class="stores">
+    <a href="https://apps.apple.com/app/id6822973085" rel="noreferrer noopener">App Store</a>
+    <a href="https://play.google.com/store/apps/details?id=com.cvdossier.app" rel="noreferrer noopener">Google Play</a>
+  </div>
+  <footer><a href="https://cvdossier.app" rel="noreferrer">cvdossier.app</a> · <a href="mailto:geralcvdossier@gmail.com">Apoio</a></footer>
+</main>
+<script>
+  (() => {
+    const params = new URLSearchParams(window.location.search);
+    const entries = [...params.entries()];
+    const candidate = entries.length === 1 ? entries[0] : null;
+    const valid = candidate && candidate[0].length <= 30 && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(candidate[0]) && /^[A-Za-z0-9_-]{22}$/.test(candidate[1]);
+    const kind = valid ? 'link' : null;
+    const token = valid ? candidate[1] : null;
+    const open = document.getElementById('open');
+    if (!kind || !token || !(kind === 'invite' ? /^[a-f0-9]{64}$/ : /^(?:[a-f0-9]{64}|[A-Za-z0-9_-]{22})$/).test(token)) {
+      document.getElementById('message').textContent = 'Esta ligação não é válida. Volta a abrir a ligação original ou pede uma nova ao proprietário.';
+      return;
+    }
+    open.href = 'cvdossier://colaborar?' + kind + '=' + token;
+    open.classList.remove('hidden');
+    // Só abre após toque; visitar a página nunca aceita nem consome um convite.
+  })();
+</script>
+</body>
+</html>

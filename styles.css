@@ -82,12 +82,11 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spa
 .btn-light::after { background: linear-gradient(100deg, transparent, rgba(43, 138, 247, .2), transparent); }
 
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 18px; }
-.soon { display: inline-flex; align-items: center; gap: 12px; padding: 9px 18px 9px 10px; border: 1px dashed #b9c6dc; border-radius: 16px; color: var(--ink); }
-.soon-icons { display: flex; }
-.soon-icons svg { width: 30px; height: 30px; padding: 6px; border-radius: 50%; background: #fff; border: 1px solid var(--line); color: var(--ink); }
-.soon-icons svg + svg { margin-left: -8px; }
-.soon > span:last-child { display: flex; flex-direction: column; font-size: 15px; font-weight: 600; line-height: 1.15; }
-.soon small { font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--blue); }
+.btn-outline { background: transparent; color: var(--ink); border: 1px solid #b9c6dc; box-shadow: none; }
+.btn-outline:hover { background: var(--blue-soft); border-color: var(--blue); }
+.btn-outline-light { background: transparent; color: #fff; border: 1px solid #7388ae; box-shadow: none; }
+.btn-outline-light:hover { background: rgba(255, 255, 255, .1); border-color: #fff; }
+.cta-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
 
 /* ---------- Cabeçalho ---------- */
 .site-header { position: fixed; inset: 0 0 auto 0; z-index: 50; transition: background .3s, box-shadow .3s; }
@@ -206,7 +205,7 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spa
 .film-external:hover { text-decoration: underline; text-underline-offset: 4px; }
 .film-external svg { width: 16px; height: 16px; }
 
-/* ---------- Inscrição de pré-lançamento ---------- */
+/* ---------- Inscrição nos testes Android ---------- */
 #inscricao { scroll-margin-top: 96px; }
 .test-badge { display: inline-block; margin: 0 6px 4px 0; padding: 3px 9px; border: 1px solid #c8ddfa; border-radius: 999px; background: var(--blue-soft); color: var(--navy); font-size: 11px; font-weight: 700; }
 .signup { background: var(--soft); border-top: 1px solid var(--line); }

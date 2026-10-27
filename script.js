@@ -1,4 +1,4 @@
-/* CvDossier — landing page (iOS disponível na App Store; testes Android em #inscricao) */
+/* CvDossier — landing page (disponível na App Store e no Google Play) */
 
 document.documentElement.classList.add('js');
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
